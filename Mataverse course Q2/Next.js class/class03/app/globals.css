@@ -1,0 +1,206 @@
+:root{
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+section{
+  scroll-margin: 50px;
+}
+header{
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center ;
+  padding: 20px 0;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+.logo{
+  font-size: 32px;
+  font-weight: 600;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav ul li{
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover{
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+.hero_section{
+  background-image: url("/images/hero_image.png");
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.hero_section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero_section h1{
+  font-size: 96px;
+}
+.hero_section h3{
+  font-size: 32px;
+}
+.music-section{
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music-section .container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.ipad-iphone-img{
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+button{
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover{
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+.btn{
+  background-color: var(--red600);
+  color: white;
+  font-size: 15px;
+}
+.btnn{
+  background-color: var(--purple300);
+  color: white;
+  font-size: 15px;
+}
+.about{
+  padding-top: 500px;
+  place-items: center;
+  gap: 50px;
+  display: grid;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about p{
+  font-size: 15px;
+  color: grey;
+}
+.video p{
+  font-size: 15px;
+  color: white;
+}
+.video{
+  background-image: url("/images/video.png");
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white ;
+  text-align: center;
+}
+.video .container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero_section, .video{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gift p{
+  font-size: 15px;
+  color: grey;
+}
+.gift{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+.giftcontent{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.giftcontent .btnn{
+  max-width: 100px;
+}
+.upper{
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.upper .container{
+  display: flex;
+  color: white;
+  justify-content: space-between
+}
+.upper h4{
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.lower{
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.gift{
+  scroll-margin: 120px;
+}
+.music-section{
+  scroll-margin: 80px;
+}
+
+@media (max-width:786px)
+{
+  
+}
