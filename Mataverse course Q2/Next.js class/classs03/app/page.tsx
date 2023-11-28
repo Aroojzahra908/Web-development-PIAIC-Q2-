@@ -1,32 +1,27 @@
-import Image from "next/image"
-import Link from "next/link"
+"use client";
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-<div>
-    <header>
-        <nav className="container">
+      <div>
+        <header>
+          <nav className="container">
             <div className="logo">
-                myTunes
+              myTunes
             </div>
             <ul>
-                <a href="#hero">
-                    <li>Overview</li>
-                </a>
-                <a href="#music">
-                    <li>Music</li>
-                </a>
-                <a href="#Vid">
-                    <li>Video</li>
-                </a>
-                <a href="#Gift">
-                    <li>Gift Cards</li>
-                </a>
-                <li>Blogs</li>
-
+              <li><Link href={"/"}>Overview</Link></li>
+              <li><Link href="#music">Music</Link></li>
+              <li><Link href="#Vid">Video</Link></li>
+              <li><Link href="#Gift">Gift Cards</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
+              {/* <li><Link href="/contact">Contact</Link></li> */}
             </ul>
-        </nav>
+          </nav>
     </header>
     <main>
         <section className="hero_section" id="hero">
@@ -153,43 +148,7 @@ export default function Home() {
     </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
 
 

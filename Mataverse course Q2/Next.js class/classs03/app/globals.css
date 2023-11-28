@@ -200,6 +200,44 @@ button:hover{
   scroll-margin: 80px;
 }
 
+/* blog page */
+.blogs {
+  text-align: center;
+  color: #1b0058;
+  padding: 19px;
+}
+.blogs_body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px;
+}
+
+.blog_box {
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+  box-sizing: border-box; /* Include padding in the width */
+  margin: 10px;
+}
+
+.blog_image img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+}
+
+
+
 @media (max-width:786px)
 {
   
