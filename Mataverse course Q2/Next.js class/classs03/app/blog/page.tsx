@@ -1,11 +1,11 @@
-// contact.js
+
 "use client";
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
 import Head from 'next/head';
 
-export default function blog() {
+const blogpage = () => {
   return ( 
     <div>
       <header>
@@ -59,77 +59,90 @@ export default function blog() {
     </div>
     {/* Content for the First Div */}
     <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+     
+    <Link href="/blog2/[slug]" as="/blog2/first-blog">
+  <div style={{ cursor: 'pointer' }}>
+    <h1 style={{ color: 'black' }}>first-blog</h1>
+  </div>
+</Link>
+      <p> This is the content of the first blog post. </p>
     </div>
   </div>
 
-
-
-{/* third Div */}
+{/* Blog 2 */}
 <div className="blog_box">
-    <div className="blog_image">
-    <img src="/images/pic.jpeg" alt="" />
-    </div>
-    {/* Content for the First Div */}
-    <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
+  <div className="blog_image">
+    <img src="/images/pic.jpeg" alt="Blog Image 2" />
   </div>
-
-
-
-
-{/* First Div */}
-  <div className="blog_box">
-    <div className="blog_image">
-    <img src="/images/gift_card.png" alt="" />
-    </div>
-    {/* Content for the First Div */}
-    <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
+  <div className="content">
+    <Link href="/blog2/[slug]" as="/blog2/second-blog">
+      <div style={{ cursor: 'pointer' }}>
+        <h1 style={{ color: 'black' }}>Second Blog</h1>
+      </div>
+    </Link>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
+</div>
 
-
-{/* third Div */}
+{/* Blog 3 */}
 <div className="blog_box">
-    <div className="blog_image">
-    <img src="/images/pic.jpeg" alt="" />
-    </div>
-    {/* Content for the First Div */}
-    <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
+  <div className="blog_image">
+    <img src="/images/gift_card.png" alt="Blog Image 3" />
   </div>
+  <div className="content">
+    <Link href="/blog2/[slug]" as="/blog2/third-blog">
+      <div style={{ cursor: 'pointer' }}>
+        <h1 style={{ color: 'black' }}>Third Blog</h1>
+      </div>
+    </Link>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
 
-{/* third Div */}
+{/* Blog 4 */}
 <div className="blog_box">
-    <div className="blog_image">
-    <img src="/images/pic2.avif" alt="" />
-    </div>
-    {/* Content for the First Div */}
-    <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
+  <div className="blog_image">
+    <img src="/images/pic.jpeg" alt="Blog Image 4" />
   </div>
+  <div className="content">
+    <Link href="/blog2/[slug]" as="/blog2/fourth-blog">
+      <div style={{ cursor: 'pointer' }}>
+        <h1 style={{ color: 'black' }}>Fourth Blog</h1>
+      </div>
+    </Link>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
 
-
-{/* third Div */}
+{/* Blog 5 */}
 <div className="blog_box">
-    <div className="blog_image">
-    <img src="/images/pic1.avif" alt="" />
-    </div>
-    {/* Content for the First Div */}
-    <div className="content">
-      <h1>Blog 1</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </div>
+  <div className="blog_image">
+    <img src="/images/pic2.avif" alt="Blog Image 5" />
   </div>
+  <div className="content">
+    <Link href="/blog2/[slug]" as="/blog2/fifth-blog">
+      <div style={{ cursor: 'pointer' }}>
+        <h1 style={{ color: 'black' }}>Fifth Blog</h1>
+      </div>
+    </Link>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+{/* Blog 6 */}
+<div className="blog_box">
+  <div className="blog_image">
+    <img src="/images/pic1.avif" alt="Blog Image 6" />
+  </div>
+  <div className="content">
+    <Link href="/blog2/[slug]" as="/blog2/sixth-blog">
+      <div style={{ cursor: 'pointer' }}>
+        <h1 style={{ color: 'black' }}>Sixth Blog</h1>
+      </div>
+    </Link>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
 
 
 </div>
@@ -186,20 +199,7 @@ export default function blog() {
             <p>Copyright &#169; 2023 Do Some Coding</p>
         </section>
     </footer>
-
-
-
-
-
-
     </div>
   );
 }
-
-
-
-
-
-
-
-
+export default blogpage;
