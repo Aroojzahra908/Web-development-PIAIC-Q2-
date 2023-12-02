@@ -1,5 +1,7 @@
-
+import Link from 'next/link';
 import React from 'react';
+import FirstBlogPost from './first-blog';
+import SecondBlogPost from './second-blog';
 
 interface BlogData {
   title: string;
@@ -11,7 +13,8 @@ const blogData2: BlogData[] = [
   {
     title: "First Blog ",
     slug: "first-blog",
-    content: "This is the content of the first blog post."
+    content:`This is my first blog page`
+
   },
   {
     title: "Second Blog",
@@ -40,15 +43,32 @@ const blogData2: BlogData[] = [
   }
 ];
 
-export default function Blogs({ params }: { params: { slug: string } }) {
-  const selectedBlog = blogData2.filter((blog) => blog.slug === params.slug);
 
+// simple sir method 
+// export default function Blogs({ params }: { params: { slug: string } }) {
+//   const selectedBlog = blogData2.filter((blog) => blog.slug === params.slug);
+
+//   return (
+//     <div>
+      
+//       {selectedBlog[0]?.content}
+//     </div>
+
+
+
+export default function Blogs({ params }: { params: { slug: string } }) {
+  const selectedBlog = blogData2.find((blog) => blog.slug === params.slug);
+
+  if (!selectedBlog) {
+    return <div>Blog not found</div>;
+  }
   return (
     <div>
-      {selectedBlog[0]?.content}
-    </div>
+    <h1>{selectedBlog.title}</h1>
+    {params.slug === 'first-blog' && <FirstBlogPost/>}
+    {params.slug === 'second-blog' && <SecondBlogPost/>}
+    {/* Add similar conditions for other blogs */}
+  </div>
   );
 }
-
-
 

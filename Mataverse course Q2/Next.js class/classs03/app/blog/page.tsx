@@ -60,7 +60,7 @@ const blogpage = () => {
     {/* Content for the First Div */}
     <div className="content">
      
-    <Link href="/blog2/[slug]" as="/blog2/first-blog">
+    <Link href="/blog2/[slug]/first-blog" as="/blog2/first-blog">
   <div style={{ cursor: 'pointer' }}>
     <h1 style={{ color: 'black' }}>first-blog</h1>
   </div>
