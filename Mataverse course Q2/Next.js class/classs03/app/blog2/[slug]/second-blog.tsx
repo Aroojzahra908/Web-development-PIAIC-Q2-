@@ -1,5 +1,3 @@
-// components/SecondBlogPost.js
-
 import React from 'react';
 
 const SecondBlogPost = () => (

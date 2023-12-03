@@ -1,5 +1,3 @@
-// components/FirstBlogPost.js
-
 import React from 'react';
 const FirstBlogPost = () => (
   <div>
