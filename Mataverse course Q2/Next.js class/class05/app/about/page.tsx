@@ -1,5 +1,5 @@
-// import{ listtype } from "@/types/commonTypes"
-
+// show specific value from list of students 
+import { listtype } from "../types/commonTypes";
 export default function About() {
   const list: listtype[] = [
     {
@@ -33,21 +33,26 @@ export default function About() {
   return (
     <div>
       <h1>list of characters </h1>
-{/* 
+method 3  show title and intro from list of data 
       {list.map((item, index) => {
        return <div>
 <h1>Name:{item.name}</h1>
  <h1>intro:{item.intro}</h1>
  <h1>title:{item.title}</h1>
          </div>;
-     })} */}
+     })}
 
 
-{list.map((item, index) => {
+
+
+
+{/* Method 2   to access multiple data then add fragments */}
+{/* {list.map((item, index) => {
         return (
         <div>
             {index%2===0?
-            <>
+          //  use <>  fragment bcz one parent for map loop
+             <>      
 <h1>Name:{item.name}</h1>
 <h1>intro:{item.intro}</h1>
 <h1>title:{item.title}</h1>
@@ -56,33 +61,10 @@ export default function About() {
 :""}
         </div>
         )
-      })}
+      })} */}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{/* method 1 */}
 
 {/* const list=["arooj", "ali", "hassan"] */}
       {/* its not good bcz repitition of code  */}
