@@ -1,7 +1,7 @@
-import{studenttype} from "../types/commonTypes";
+import{studentType} from "@/types/commonTypes";
 export default function Studentdata(){
   
-const students:studenttype[]= [  
+const students:studentType[]= [  
     {  
        name:'arun',
        gender:'Male',

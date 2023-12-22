@@ -1,5 +1,5 @@
-import { studenttype } from "../types/commonTypes";
-const studentsdata: studenttype[] = [
+import { studentType } from "@/types/commonTypes";
+const studentsdata: studentType[] = [
   {
     name: "arun",
     gender: "Male",
