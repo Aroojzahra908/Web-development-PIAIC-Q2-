@@ -2,6 +2,7 @@ export type ButtonProps = {
     title: string
     data?:string,
     onClickHandler: ()=> void
+    className?: string
 }
 
 export type CardPropsType = {

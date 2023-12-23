@@ -3,7 +3,7 @@ import { ButtonProps } from "@/types/componentTypes";
 var count:number = 1;
 function Button(props:ButtonProps){
     return (
-        <button onClick={props.onClickHandler}>{props.title}</button>
+        <button className={props.className}  onClick={props.onClickHandler}>{props.title} </button>
     )
 }
 
