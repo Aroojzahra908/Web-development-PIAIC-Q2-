@@ -1,2 +1,2 @@
-python-dotenv
-openai
+# python-dotenv
+# openai
