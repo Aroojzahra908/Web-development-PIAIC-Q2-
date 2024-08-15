@@ -1,1 +1,0 @@
-Create a blog site. And use dynamic routing to show blogs
